@@ -1,0 +1,28 @@
+{
+    "name" : "ant",
+    "description" : "Apache Ant Adapter, execute Ant tasks from node",
+    "keywords" : ["ant", "build", "java"],
+    "homepage" : "http://github.com/millermedeiros/node-ant/",
+    "version" : "0.1.0",
+    "author" : {
+        "name" : "Miller Medeiros",
+        "url" : "http://blog.millermedeiros.com/"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/millermedeiros/node-ant.git"
+    },
+    "main" : "index.js",
+    "bugs" : {
+        "url" : "https://github.com/millermedeiros/node-ant/issues"
+    },
+    "licenses" : [
+        {
+            "type" : "MIT",
+            "url" : "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "engines" : {
+        "node" : "~0.8.0"
+    }
+}
