@@ -14,7 +14,7 @@ exports.ANT_PATH = './ant/bin/ant';
 var _childProcess = require('child_process');
 var _fs = require('fs');
 var _path = require('path');
-var _jxon = require('lib/jxon');
+var _jxon = require('./lib/jxon');
 
 // ---
 
@@ -35,7 +35,7 @@ function exec(tasks, args, callback) {
     /*jshint multistr:true */
 
     var xml = '<?xml version="1.0" encoding="utf-8"?>\
-<project name="node-ant" default="run">\
+<project name="node_ant" default="run">\
   <target name="run">{{target}}</target>\
 </project>';
 

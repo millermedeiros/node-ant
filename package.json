@@ -3,7 +3,7 @@
     "description" : "Apache Ant Adapter, execute Ant tasks from node",
     "keywords" : ["ant", "build", "java"],
     "homepage" : "http://github.com/millermedeiros/node-ant/",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "author" : {
         "name" : "Miller Medeiros",
         "url" : "http://blog.millermedeiros.com/"

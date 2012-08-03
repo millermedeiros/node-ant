@@ -99,9 +99,9 @@ ant.exec({
 }, function(err, stdout, stderror){
     // it doesn't throw any errors and also doesn't log the stdout by
     // default that way you can control what you want to do.
+    if (stdout) console.log(stdout);
     if (stderror) console.log(stderror);
     if (err) throw err;
-    if (stdout) console.log(stdout);
 });
 ```
 
@@ -131,7 +131,7 @@ during the `exec`.
 Attributes starts with `@`.
 
     > { foo : { '@bar' : 123 }}
-    <foo bar="123"></foo>
+    <foo bar="123" />
 
 The XML node text value is stored as the actual key value if node doesn't
 contain attributes and/or child nodes or on a special property `keyValue`.
@@ -159,7 +159,7 @@ contain attributes and/or child nodes or on a special property `keyValue`.
             }
         }
     }
-    <concat><fileset dir="."><include name="*.js"></include></fileset></concat>
+    <concat><fileset dir="."><include name="*.js" /></fileset></concat>
 
 Use the [Ant tasks
 documentation](http://ant.apache.org/manual/tasksoverview.html) as reference.
@@ -196,6 +196,12 @@ of special token to differentiate duplicates (eg. `echo#1`, `echo#2`).
 
 
 ## Changelog
+
+### v0.2.0 (2012/08/03)
+
+ - add support to functions on tasks (for [script](http://ant.apache.org/manual/Tasks/script.html) task). [Thanks to @Diullei](https://gist.github.com/3245017)
+ - small refactor to jxon to improve readability and autoclose empty tags.
+
 
 ### v0.1.0 (2012/08/02)
 
