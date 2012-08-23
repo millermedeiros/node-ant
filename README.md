@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/millermedeiros/node-ant.png)](http://travis-ci.org/millermedeiros/node-ant)
 # node-ant
 
 Experimental [Apache Ant](http://ant.apache.org/) adapter for
