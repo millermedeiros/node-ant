@@ -61,8 +61,6 @@ on the [copy task](http://ant.apache.org/manual/Tasks/copy.html) (multiple
 `include`/`exclude`, `filter`, `globmapper`, download internet files,
 `flatten`, etc...).
 
-
-
 ## How?
 
 The idea is to use the Ant as if it was a standalone library that can be called
@@ -72,8 +70,6 @@ when necessary.
 It will simply convert JSON-like objects into a temporary XML file and execute
 the standalone version of Ant passing the custom arguments. This tool is just
 a "bridge" between Node.js and the Ant JAR file.
-
-
 
 ## Example
 
@@ -115,12 +111,13 @@ markup needed to execute each task, `node-ant` will convert it back to XML
 during the `exec`.
 
 
-### `ant.exec(tasks, [args], callback)`
+### `ant.exec(tasks, [options], callback)`
 
  - **tasks**:
    - JSON-like object containing Ant tasks to be executed.
- - **[args]**:
-   - Command line arguments passed to the ant executable.
+ - **[options]**:
+    - options.antPath: The path where your ant executable is located. Example: `'C:/ant/bin'`
+    - options.args: Command line arguments passed to the ant executable.
  - **callback**
    - Function executed after `exec` finishes. Will receive the following
      arguments: (err, stdout, stderr).
